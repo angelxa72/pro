@@ -44,9 +44,9 @@ header {
 }
 
 .logo img {
-    height: 35px; /* Smaller logo */
+    height: 30px; /* Smaller logo */
     width: auto;
-    max-width: 150px; /* Prevent logo from being too wide */
+    max-width: 120px; /* Prevent logo from being too wide */
     transition: transform 0.3s ease;
 }
 .logo img:hover {
@@ -740,4 +740,5 @@ footer {
     }
 
 }
+
 
