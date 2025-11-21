@@ -251,19 +251,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Add scroll effect to header
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        if (header) {
-            if (window.scrollY > 100) {
-                header.style.backgroundColor = 'rgba(26, 54, 93, 0.95)';
-                header.style.backdropFilter = 'blur(5px)';
-            } else {
-                header.style.backgroundColor = '#1a365d';
-                header.style.backdropFilter = 'none';
-            }
+    // Add scroll effect to header
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (header) {
+        if (window.scrollY > 100) {
+            header.style.backgroundColor = 'rgba(0, 0, 0, 0.95)'; /* Black with transparency */
+            header.style.backdropFilter = 'blur(5px)';
+        } else {
+            header.style.backgroundColor = '#000000'; /* Solid black */
+            header.style.backdropFilter = 'none';
         }
-    });
-    
+    }
+});
     // Add animation to project cards on page load
     projectCards.forEach((card, index) => {
         card.style.opacity = '0';
@@ -275,4 +275,5 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.transform = 'translateY(0)';
         }, index * 100);
     });
+
 });
