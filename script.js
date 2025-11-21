@@ -266,8 +266,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         observer.observe(statsSection);
     }
-    
-    // Add scroll effect to header
     // Add scroll effect to header
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
@@ -302,3 +300,4 @@ window.addEventListener('scroll', function() {
     }
 
 });
+
