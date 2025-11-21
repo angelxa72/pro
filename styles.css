@@ -21,9 +21,9 @@ body {
 }
 /* Header styles */
 header {
-    background-color: #1a365d;
+    background-color: #000000;
     color: white;
-    padding: 1rem 0;
+    padding: 0.8rem 0; /* Reduced from 1rem to 0.7rem */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -40,14 +40,15 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    height: 40px; /* Fixed height to match original nav bar */
 }
 
 .logo img {
-    height: 50px; /* Adjust this value based on your logo size */
+    height: 35px; /* Smaller logo */
     width: auto;
+    max-width: 150px; /* Prevent logo from being too wide */
     transition: transform 0.3s ease;
 }
-
 .logo img:hover {
     transform: scale(1.05);
 }
@@ -649,9 +650,15 @@ footer {
         position: relative;
     }
     
-    .logo img {
-        height: 40px; /* Smaller logo on mobile */
+     .logo img {
+        height: 30px; /* Even smaller on mobile */
+        max-width: 120px;
     }
+    
+    header {
+        padding: 0.5rem 0; /* Smaller padding on mobile */
+    }
+}
     
     nav {
         width: 100%;
@@ -733,3 +740,4 @@ footer {
     }
 
 }
+
