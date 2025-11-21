@@ -38,24 +38,13 @@ header {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    height: 40px; /* Fixed height to match original nav bar */
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fbbf24;
 }
 
-.logo img {
-    height: 30px; /* Smaller logo */
-    width: auto;
-    max-width: 120px; /* Prevent logo from being too wide */
-    transition: transform 0.3s ease;
-}
-.logo img:hover {
-    transform: scale(1.05);
-}
-
-/* Remove the old text logo styles */
-.logo-text {
-    display: none;
+.logo span {
+    color: white;
 }
 nav ul {
     display: flex;
@@ -649,12 +638,9 @@ footer {
         flex-direction: column;
         position: relative;
     }
-    
-     .logo img {
-        height: 30px; /* Even smaller on mobile */
-        max-width: 120px;
+    .logo {
+        font-size: 1.6rem; /* Optional: slightly smaller on mobile */
     }
-    
     header {
         padding: 0.5rem 0; /* Smaller padding on mobile */
     }
@@ -740,5 +726,6 @@ footer {
     }
 
 }
+
 
 
