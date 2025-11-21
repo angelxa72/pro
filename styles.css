@@ -19,7 +19,6 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-
 /* Header styles */
 header {
     background-color: #1a365d;
@@ -39,15 +38,24 @@ header {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #fbbf24;
+    display: flex;
+    align-items: center;
 }
 
-.logo span {
-    color: white;
+.logo img {
+    height: 50px; /* Adjust this value based on your logo size */
+    width: auto;
+    transition: transform 0.3s ease;
 }
 
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Remove the old text logo styles */
+.logo-text {
+    display: none;
+}
 nav ul {
     display: flex;
     list-style: none;
@@ -641,6 +649,10 @@ footer {
         position: relative;
     }
     
+    .logo img {
+        height: 40px; /* Smaller logo on mobile */
+    }
+    
     nav {
         width: 100%;
         max-height: 0;
@@ -719,4 +731,5 @@ footer {
         width: 95%;
         margin: 5% auto;
     }
+
 }
